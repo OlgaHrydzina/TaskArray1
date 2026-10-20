@@ -4,16 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class Warehouse {
-  private static Warehouse instance;
+public class ArrayWarehouse {
+  private static ArrayWarehouse instance;
 
   private final Map<String, ArrayParameters> storage = new HashMap<>();
 
-  private Warehouse() {
+  private ArrayWarehouse() {
   }
-  public static Warehouse getInstance() {
+  public static ArrayWarehouse getInstance() {
     if (instance == null) {
-      instance = new Warehouse();
+      instance = new ArrayWarehouse();
     }
     return instance;
   }
